@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Intro component | frontend mentor</title>
+      <link rel="icon" type="png" href="imagenes/favicon-32x32.png">
+      <link rel="stylesheet" href="style.css">
+
+      <!--JS-->
+      <script src="logic.js" defer></script>
+
+      <!--Google fonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+      <main>
+            <!--Left seccion-->
+            <section class="left">
+                  <h1>Learn to code by watching others</h1>
+                  <p>
+                        See how experienced developers solve problems 
+                        in real-time. Watching scripted tutorials is great, 
+                        but understanding now developers think is invaluable.
+                  </p>
+            </section>
+            
+            <!--Right seccion-->
+            <section class="right">
+                  <button class="days-free"><span>Try it free 7 days</span> then $20/mo. thereafter</button>
+                  <!--name, last name, email, password-->
+                  <form class="form" id="form">
+                        <div class="name">
+                              <input type="text" placeholder="Name" name="Name" id="name" class="formulario__grupo" required>
+                              <p class="warnings" id="n">First Name cannot be empty</p>
+                        </div>
+
+                        <div>
+                              <input type="text" placeholder="Last Name" name="last" id="Last" class="formulario__grupo" required>
+                              <p class="warnings" id="l">Last Name cannot be empty</p>
+                        </div>
+
+                        <div>
+                              <input type="email" placeholder="Email Address" name="email" id="email" class="formulario__grupo" required>
+                              <p class="warnings" id="e">Looks like is not an email</p>
+                        </div>
+
+                        <div>
+                              <input type="password" placeholder="Password" name="Password" id="password" class="formulario__grupo" required>
+                              <p class="warnings" id="p2">Password it is not correct</p>
+                        </div>
+
+                        <button type="submit" class="claim">claim your free trial</button>
+                        <p>By clicking the button you are agree to our <span>terms and conditions</span></p>
+                  </form>
+            </section>
+      </main>
+</body>
+</html>

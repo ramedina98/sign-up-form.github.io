@@ -1,0 +1,268 @@
+/*general settings*/
+*{
+
+      box-sizing: border-box;
+}
+html, body{
+
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+}
+
+/*just the body*/
+body{
+
+      background-color: hsl(0, 100%, 74%);
+      background-image: url(imagenes/bg-intro-desktop.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      max-width: 1440px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      margin: 0 auto;
+}
+
+/*main*/
+main{
+
+      width: 100%;
+      height: 47rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+
+}
+
+
+/*left side*/
+.left{
+
+      color: white;
+      display: flex;
+      width: 50%;
+      flex-direction: column;
+      padding: 0 6rem;
+}
+.left h1{
+
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 3rem;
+      margin-bottom: 1rem;
+}
+.left p{
+
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.891);
+      font-size: 1rem;
+      line-height: 1.5rem;
+}
+
+/*right side*/
+.right{
+
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items:center;
+      flex-direction: column;
+      padding: 1rem;
+      text-align: center;
+}
+.days-free{
+
+      width: 100%;
+      height: 11%;
+      border-radius: .6rem;
+      border: none;
+      background-color: hsl(248, 32%, 49%);
+      box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.37);
+      -webkit-box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.37);
+      -moz-box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.37);
+      margin-bottom: 1rem;
+      /*font*/
+      font-family: 'Poppins', sans-serif;
+      color: rgba(255, 255, 255, 0.834);
+      font-size: 1rem;
+      cursor: pointer;
+}
+.days-free span{
+
+      font-weight: 700;
+      color: white;
+}
+.days-free:hover{
+
+      background-color: hsl(248, 33%, 40%);
+      color: white;
+      transition: all 0.3s;
+}
+
+/*inputs card*/
+.form{
+
+      border-radius: .7rem;
+      background-color: white;
+      width: 100%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1.6rem;
+}
+.formulario__grupo{
+
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1.1rem;
+      border-radius: .5rem;
+      border: 1px solid rgba(0, 0, 0, 0.342);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      cursor: pointer;
+}
+/*css para la validacion*/
+.formulario__grupo-correcto{
+
+      color: rgba(12, 12, 12, 0.939);
+}
+.formulario__grupo-incorrecto{
+
+      color: rgba(203, 21, 21, 0.907);
+      background-image: url(imagenes/icon-error.svg);
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: left;
+      background-position: 90%;
+      border: 1px solid rgba(203, 21, 21, 0.907);
+      transition: all 0.5s;
+
+}
+.form div{
+
+      width: 100%;
+}
+.form div p{
+
+      color: red;
+}
+.warnings{
+
+      margin: 0;
+      padding: 0;
+      display: none;
+      color: red;
+      font-style: italic;
+      font-weight: bold;
+      text-align: right;
+
+}
+.form input:first-of-type{
+
+      margin-top: .75rem;
+}
+.form input:hover{
+
+      border: 1px solid black;
+      transition: all 0.3s;
+}
+
+.claim{
+
+      width: 90%;
+      height: 12%;
+      background-color: hsl(154, 59%, 51%);
+      border: none;
+      border-bottom: 3px solid hsl(154, 57%, 42%);
+      border-radius: .5rem;
+
+      /*font*/
+      font-family: 'Poppins', sans-serif;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: white;
+      letter-spacing: .13rem;
+      cursor: pointer;
+}
+.claim:hover{
+      
+      background-color: hsl(154, 56%, 48%);
+      border-bottom: 3px solid hsl(154, 36%, 26%);
+      transition: all 0.3s;
+}
+
+.form p{
+
+      font-size: .80rem;
+      line-height: 1.6rem;
+      color: rgba(0, 0, 0, 0.411);
+}
+.form p span{
+
+      color: hsl(0, 100%, 74%);
+      font-weight: 600;
+      cursor: pointer;
+}
+.form p span:hover{
+
+      color: hsl(0, 100%, 66%);
+      transition: all 0.3s;
+}
+
+
+/*RESNPOSIVE*/
+@media screen and (max-width: 787px){
+
+      main{
+
+            flex-direction: column;
+            flex-flow: column;
+            padding: 0;
+            height: 100%;
+      }
+      .left{
+
+            width: 100%;
+            text-align: center;
+            padding: 0;
+      }
+      .right{
+
+            padding: 0;
+      }
+      .days-free{
+
+            width: 100%;
+            height: 5rem;
+            
+      }
+      .right{
+
+            width: 100%;
+      }
+      .claim{
+
+            height: 4rem;
+      }
+}
+
+@media screen and (max-width: 425px){
+
+     
+      .left h1{
+
+            font-size: 2rem;
+      }
+      .left p{
+
+            font-size: 1rem;
+      }
+}
